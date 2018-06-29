@@ -1,7 +1,7 @@
 try {
   let pattern = GeoPattern.generate(Date.now().toString())
   document.body.style.backgroundImage = pattern.toDataUrl()
-} catch {
+} catch(err) {
   document.body.style.backgroundColor = '#006cab'
 }
 
